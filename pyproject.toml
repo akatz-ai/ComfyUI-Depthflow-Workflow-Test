@@ -34,10 +34,49 @@ dependencies = [
 
 [tool.comfygit]
 comfyui_version = "v0.3.68"
-comfyui_version_type = "release"
-comfyui_commit_sha = "265adad858e1f31b66cd3523a02b16f5d34ced52"
 python_version = "3.12"
-torch_backend = "auto"
+
+[tool.comfygit.workflows.image_qwen_image_edit_2509]
+path = "workflows/image_qwen_image_edit_2509.json"
+
+[[tool.comfygit.workflows.image_qwen_image_edit_2509.models]]
+filename = "qwen_image_edit_2509_fp8_e4m3fn.safetensors"
+category = "diffusion_models"
+criticality = "flexible"
+status = "unresolved"
+nodes = [{node_id = "37", node_type = "UNETLoader", widget_idx = 0, widget_value = "qwen_image_edit_2509_fp8_e4m3fn.safetensors"}]
+sources = ["https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors"]
+relative_path = "diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors"
+
+[[tool.comfygit.workflows.image_qwen_image_edit_2509.models]]
+filename = "Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors"
+category = "loras"
+criticality = "flexible"
+status = "unresolved"
+nodes = [{node_id = "89", node_type = "LoraLoaderModelOnly", widget_idx = 0, widget_value = "Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors"}]
+sources = ["https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-2509/Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors"]
+relative_path = "loras/Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors"
+
+[[tool.comfygit.workflows.image_qwen_image_edit_2509.models]]
+filename = "qwen_2.5_vl_7b_fp8_scaled.safetensors"
+category = "clip"
+criticality = "required"
+status = "resolved"
+nodes = [{node_id = "38", node_type = "CLIPLoader", widget_idx = 0, widget_value = "qwen_2.5_vl_7b_fp8_scaled.safetensors"}]
+hash = "b879a9cd00f5a8f5"
+
+[[tool.comfygit.workflows.image_qwen_image_edit_2509.models]]
+filename = "qwen_image_vae.safetensors"
+category = "vae"
+criticality = "flexible"
+status = "unresolved"
+nodes = [{node_id = "39", node_type = "VAELoader", widget_idx = 0, widget_value = "qwen_image_vae.safetensors"}]
+
+[tool.comfygit.workflows.image_qwen_image_edit_2509.custom_node_map]
+TextEncodeQwenImageEditPlus = false
+
+[tool.comfygit.models]
+b879a9cd00f5a8f5 = {filename = "qwen_2.5_vl_7b_fp8_scaled.safetensors", size = 9384670680, relative_path = "clip/qwen_2.5_vl_7b_fp8_scaled.safetensors", category = "clip", sources = ["https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors"]}
 
 [tool.uv]
 constraint-dependencies = ["torch==2.9.1+cu129", "torchvision==0.24.1+cu129", "torchaudio==2.9.1+cu129"]

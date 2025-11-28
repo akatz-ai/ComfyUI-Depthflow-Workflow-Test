@@ -1476,32 +1476,6 @@
       "mode": 0
     },
     {
-      "id": 99,
-      "type": "MarkdownNote",
-      "widgets_values": [
-        "[Tutorial](https://docs.comfy.org/tutorials/image/qwen/qwen-image-edit)\n\n\n## Model links\n\nYou can find all the models on [Comfy-Org/Qwen-Image_ComfyUI](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/tree/main) and  [Comfy-Org/Qwen-Image-Edit_ComfyUI](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI) \n\n**Diffusion model**\n\n- [qwen_image_edit_2509_fp8_e4m3fn.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors)\n\n**LoRA**\n\n- [Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors](https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-2509/Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors)\n\n**Text encoder**\n\n- [qwen_2.5_vl_7b_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors)\n\n**VAE**\n\n- [qwen_image_vae.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors)\n\nModel Storage Location\n\n```\n\ud83d\udcc2 ComfyUI/\n\u251c\u2500\u2500 \ud83d\udcc2 models/\n\u2502   \u251c\u2500\u2500 \ud83d\udcc2 diffusion_models/\n\u2502   \u2502   \u2514\u2500\u2500 qwen_image_edit_2509_fp8_e4m3fn.safetensors\n\u2502   \u251c\u2500\u2500 \ud83d\udcc2 loras/\n\u2502   \u2502   \u2514\u2500\u2500 Qwen-Image-Lightning-4steps-V1.0.safetensors\n\u2502   \u251c\u2500\u2500 \ud83d\udcc2 vae/\n\u2502   \u2502   \u2514\u2500\u2500 qwen_image_vae.safetensors\n\u2502   \u2514\u2500\u2500 \ud83d\udcc2 text_encoders/\n\u2502       \u2514\u2500\u2500 qwen_2.5_vl_7b_fp8_scaled.safetensors\n```\n\n## Report issue\nIf you have any problems running this workflow, please report template-related issues via this link: [report the template issue here](https://github.com/Comfy-Org/workflow_templates/issues)"
-      ],
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "widget_ue_connectable": {}
-      },
-      "flags": {},
-      "pos": [
-        -840.0,
-        -140.0
-      ],
-      "size": [
-        550.0,
-        550.0
-      ],
-      "order": 8,
-      "mode": 0,
-      "title": "Model links",
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 60,
       "type": "SaveImage",
       "widgets_values": [
@@ -1597,14 +1571,40 @@
       "mode": 0,
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 99,
+      "type": "MarkdownNote",
+      "widgets_values": [
+        "[Tutorial](https://docs.comfy.org/tutorials/image/qwen/qwen-image-edit)\n\n\n## Model links\n\nYou can find all the models on [Comfy-Org/Qwen-Image_ComfyUI](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/tree/main) and  [Comfy-Org/Qwen-Image-Edit_ComfyUI](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI) \n\n**Diffusion model**\n\n- [qwen_image_edit_2509_fp8_e4m3fn.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors)\n\n**LoRA**\n\n- [Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors](https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-2509/Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors)\n\n**Text encoder**\n\n- [qwen_2.5_vl_7b_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors)\n\n**VAE**\n\n- [qwen_image_vae.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors)\n\nModel Storage Location\n\n```\n\ud83d\udcc2 ComfyUI/\n\u251c\u2500\u2500 \ud83d\udcc2 models/\n\u2502   \u251c\u2500\u2500 \ud83d\udcc2 diffusion_models/\n\u2502   \u2502   \u2514\u2500\u2500 qwen_image_edit_2509_fp8_e4m3fn.safetensors\n\u2502   \u251c\u2500\u2500 \ud83d\udcc2 loras/\n\u2502   \u2502   \u2514\u2500\u2500 Qwen-Image-Lightning-4steps-V1.0.safetensors\n\u2502   \u251c\u2500\u2500 \ud83d\udcc2 vae/\n\u2502   \u2502   \u2514\u2500\u2500 qwen_image_vae.safetensors\n\u2502   \u2514\u2500\u2500 \ud83d\udcc2 text_encoders/\n\u2502       \u2514\u2500\u2500 qwen_2.5_vl_7b_fp8_scaled.safetensors\n```\n\n## Report issue\nIf you have any problems running this workflow, please report template-related issues via this link: [report the template issue here](https://github.com/Comfy-Org/workflow_templates/issues)"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "widget_ue_connectable": {}
+      },
+      "flags": {},
+      "pos": [
+        1464.2331428638538,
+        -729.5949033959694
+      ],
+      "size": [
+        550.0,
+        550.0
+      ],
+      "order": 8,
+      "mode": 0,
+      "title": "Model links",
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "extra": {
     "ds": {
-      "scale": 0.36567480274706976,
+      "scale": 0.33243163886097254,
       "offset": [
-        1253.3150789397132,
-        -988.7926840606367
+        1690.8050990678712,
+        1026.8004019635123
       ]
     },
     "frontendVersion": "1.32.1",
